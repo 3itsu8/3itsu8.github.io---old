@@ -1,1 +1,10 @@
 @charset "utf-8";
+
+@font-face {
+    font-family: "LINESeedJP_OTF_Bd";
+    src: url(../fonts/LINESeedJP_OTF_Bd.woff2) format(”woff2”); /* フォントファイルのパスとフォーマットを指定 */
+}
+
+body {
+    font-family: "LINESeedJP_OTF_Bd";
+}
