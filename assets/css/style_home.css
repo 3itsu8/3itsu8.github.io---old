@@ -8,7 +8,80 @@
 /* 
 Base Style
 */
-
 body {
+    display: flex;
     font-family: "LINESeedJP_OTF_Bd", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/* 
+header 
+*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.header_navlist {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_navitem > a {
+    display: block;
+    padding: 30px;
+    color: #93C4C0;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* 
+introduction 
+*/
+.section_introduction{
+    vertical-align: middle;
+    margin: auto;
+    padding-left: 10%;
+}
+
+.introduction {
+    margin: 100;
+    display: flex;
+    align-items: center;
+}
+
+.introduction_image {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.introduction_caption {
+    padding-left: 25px;
+    color: #93C4C0;
+}
+
+.introduction_title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.introduction_name {
+    margin: 0;
+    font-size: 50px;
+}
+
+/* 
+video 
+*/
+.section_video { 
+    clip-path: circle(50% at 50% 50%);
 }
