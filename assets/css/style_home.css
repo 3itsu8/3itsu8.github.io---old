@@ -10,6 +10,7 @@ Base Style
 */
 body {
     display: flex;
+    height: 100svh;
     font-family: "LINESeedJP_OTF_Bd", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
 
@@ -60,8 +61,8 @@ introduction
 
 .introduction_image {
     border-radius: 50%;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
 }
 
 .introduction_caption {
