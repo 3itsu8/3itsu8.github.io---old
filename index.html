@@ -6,10 +6,41 @@
     <title>みつば / Home</title>
     <meta name="description" content="みつばのポートフォリオサイトになります">
     <link rel="stylesheet" href="assets/css/sanitize.css">
-    <link rel="stylesheet" href="./assets/css/style_home.css">
+    <link rel="stylesheet" href="assets/css/style_home.css">
 </head>
 <body>
-    <p>Sample</p>
+    <header class="header">
+        <nav class="header_nav">
+            <ul class="header_navlist">
+                <li class="header_navitem">
+                    <a href="#">Home</a>
+                </li>
+                <li class="header_navitem">
+                    <a href="#">Projects</a>
+                </li>
+                <li class="header_navitem">
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section_introduction">
+        <figure class="introduction">
+            <img class="introduction_image" src="assets/images/1.png" alt="icon image">
+            <figcaption class="introduction_caption">
+                <p class="introduction_title">Video Creator</p>
+                <h2 class="introduction_name">みつば</h2>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="section_video">
+        <video autoplay loop muted preload>
+            <source src="assets/videos/Video.mp4" type="video/mp4">
+        </video>
+    </section>
+
     <script src="./assets/js/app_home.js"></script>
 </body>
 </html>

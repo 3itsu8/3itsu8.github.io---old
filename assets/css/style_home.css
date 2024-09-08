@@ -5,6 +5,10 @@
     src: url(../fonts/LINESeedJP_OTF_Bd.woff) format("woff"); /* フォントファイルのパスとフォーマットを指定 */
 }
 
+/* 
+Base Style
+*/
+
 body {
-    font-family: "LINESeedJP_OTF_Bd";
+    font-family: "LINESeedJP_OTF_Bd", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 }
