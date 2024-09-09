@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>みつば / Home</title>
+    <title>みつば / About</title>
     <meta name="description" content="みつばのポートフォリオサイトになります" />
     <link rel="icon" href="/assets/images/favicon.ico" />
     <link rel="stylesheet" href="assets/css/sanitize.css" />
-    <link rel="stylesheet" href="assets/css/style_home.css" />
+    <link rel="stylesheet" href="/assets/css/style_about.css" />
   </head>
   <body>
     <header class="header">
@@ -26,26 +26,21 @@
       </nav>
     </header>
 
-    <section class="section_introduction">
-      <figure class="introduction">
-        <img
-          class="introduction_image"
-          src="assets/images/1.png"
-          alt="icon image"
-        />
-        <figcaption class="introduction_caption">
-          <p class="introduction_title">Video Creator</p>
-          <h2 class="introduction_name">みつば</h2>
+    <section class="section_about">
+        <figure class="icon">
+            <img src="/assets/images/1.png" alt="icon image" class="icon_img">
+        </figure>
+        <figcaption class="about_caption">
+            <h2 class="about_name">
+                みつば
+            </h2>
+            <p class="about_info">
+                2022年から活動を開始. BlenderやAfter Effects等を用いて映像制作を行っています.</br>
+                より良い作品作りのため日々勉強中.
+            </p>
         </figcaption>
-      </figure>
     </section>
 
-    <section class="section_video">
-      <video class="video" autoplay loop muted preload>
-        <source src="assets/videos/Video.mp4" type="video/mp4" />
-      </video>
-    </section>
-
-    <script src="./assets/js/app_home.js"></script>
+    <script src="/assets/js/app_about.js"></script>
   </body>
 </html>
