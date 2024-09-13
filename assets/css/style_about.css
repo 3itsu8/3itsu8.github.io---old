@@ -11,6 +11,10 @@ body {
   sans-serif;
 }
 
+.section_title { 
+  text-align: center;
+}
+
 /* 
 header 
 */
@@ -51,6 +55,16 @@ header
 /* 
 About
 */
+.section_about {
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+
+.about_content { 
+  width: 960px;
+  margin: 0 auto;
+}
+
 .icon {
   margin: 100;
   display: flex;
@@ -59,8 +73,8 @@ About
 
 .icon_img {
   border-radius: 50%;
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
 }
 
 .about_caption {
@@ -82,6 +96,15 @@ About
 /* 
 Social
 */
+.section_social {
+  padding-bottom: 20px;
+}
+
+.social_content {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .X_icon {
   margin: 100;
   display: flex;
@@ -97,7 +120,7 @@ Social
 .X_ID {
   padding-left: 25px;
   color: #93c4c0;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .YT_icon {
@@ -108,14 +131,14 @@ Social
 
 .YT_img {
   border-radius: 50%;
-  width: 5%;
-  height: 5%;
+  width: 3%;
+  height: 3%;
 }
 
 .YT_ID {
   padding-left: 25px;
   color: #93c4c0;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* 
@@ -123,6 +146,8 @@ Contact
 */
 .section_contact {
   color: #93c4c0;
+  padding-bottom: 100px;
+  text-align: center
 }
 
 .contact_info {
@@ -144,5 +169,8 @@ Footer
 .footer {
   background-color: #93c4c0;
   color: #fff;
-  padding-bottom: 5%;
+  font-size: 20px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
 }
