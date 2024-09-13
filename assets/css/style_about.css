@@ -7,11 +7,11 @@
 
 body {
   font-family: "LINESeedJP_OTF_Bd", "Helvetica Neue", "Helvetica",
-  "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
-  sans-serif;
+    "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
+    sans-serif;
 }
 
-.section_title { 
+.section_title {
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ About
   padding-top: 80px;
 }
 
-.about_content { 
+.about_content {
   width: 960px;
   margin: 0 auto;
 }
@@ -103,12 +103,16 @@ Social
 .social_content {
   width: 960px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .X_icon {
-  margin: 100;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .X_img {
@@ -147,7 +151,7 @@ Contact
 .section_contact {
   color: #93c4c0;
   padding-bottom: 100px;
-  text-align: center
+  text-align: center;
 }
 
 .contact_info {
