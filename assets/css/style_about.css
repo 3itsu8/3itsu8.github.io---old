@@ -10,3 +10,139 @@ body {
   "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
   sans-serif;
 }
+
+/* 
+header 
+*/
+.header {
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.header_navlist {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_navitem > a {
+  display: block;
+  padding: 30px;
+  color: #93c4c0;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.section_title {
+  padding-left: 25px;
+  color: #93c4c0;
+  font-size: 40px;
+}
+
+/* 
+About
+*/
+.icon {
+  margin: 100;
+  display: flex;
+  align-items: center;
+}
+
+.icon_img {
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+}
+
+.about_caption {
+  padding-left: 25px;
+  color: #93c4c0;
+}
+
+.about_info {
+  margin: 0;
+  font-size: 15px;
+}
+
+.about_name {
+  margin: 0;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+/* 
+Social
+*/
+.X_icon {
+  margin: 100;
+  display: flex;
+  align-items: center;
+}
+
+.X_img {
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+}
+
+.X_ID {
+  padding-left: 25px;
+  color: #93c4c0;
+  font-size: 20px;
+}
+
+.YT_icon {
+  margin: 100;
+  display: flex;
+  align-items: center;
+}
+
+.YT_img {
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+}
+
+.YT_ID {
+  padding-left: 25px;
+  color: #93c4c0;
+  font-size: 20px;
+}
+
+/* 
+Contact
+*/
+.section_contact {
+  color: #93c4c0;
+}
+
+.contact_info {
+  font-size: 15px;
+}
+
+.contact_mail {
+  font-size: 30px;
+}
+
+.contact_mail > a {
+  text-decoration: none;
+  color: #93c4c0;
+}
+
+/* 
+Footer
+*/
+.footer {
+  background-color: #93c4c0;
+  color: #fff;
+  padding-bottom: 5%;
+}
