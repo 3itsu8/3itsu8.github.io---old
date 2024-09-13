@@ -117,8 +117,8 @@ Social
 
 .X_img {
   border-radius: 50%;
-  width: 5%;
-  height: 5%;
+  width: 6%;
+  height: 6%;
 }
 
 .X_ID {
@@ -127,22 +127,32 @@ Social
   font-size: 25px;
 }
 
+.X_Link {
+  text-decoration: none;
+  color: #93c4c0;
+}
+
 .YT_icon {
-  margin: 100;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .YT_img {
   border-radius: 50%;
-  width: 3%;
-  height: 3%;
+  width: 6%;
+  height: 6%;
 }
 
 .YT_ID {
   padding-left: 25px;
   color: #93c4c0;
   font-size: 25px;
+}
+
+.YT_Link {
+  text-decoration: none;
+  color: #93c4c0;
 }
 
 /* 
@@ -174,7 +184,7 @@ Footer
   background-color: #93c4c0;
   color: #fff;
   font-size: 20px;
-  height: 150px;
-  line-height: 150px;
+  height: 200px;
+  line-height: 200px;
   text-align: center;
 }
