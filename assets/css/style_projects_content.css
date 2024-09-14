@@ -67,7 +67,7 @@ Content
 }
 
 .video_link {
-  transform: scale(1.8);
+  transform: scale(1.7);
   width: 30%;
   margin: 0 auto;
 }
@@ -80,9 +80,8 @@ Content
 }
 
 .content_info {
-  align-items: center;
-  justify-content: center;
   padding-top: 100px;
+  padding-left: 455px;
 }
 
 .content_info h2 {
