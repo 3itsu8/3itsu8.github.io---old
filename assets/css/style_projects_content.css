@@ -27,7 +27,7 @@ header
   align-items: center;
   padding: 0 15px;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top: 0;
   left: 0;
 }
@@ -56,6 +56,15 @@ header
 .header ul {
   list-style: none;
   padding: 0;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 90;
+  transition: opacity 1s, z-index 1s;
 }
 
 /* 
@@ -107,18 +116,17 @@ Content
   padding-left: 50px;
 }
 
-
 /* 
 Footer
 */
 .footer {
-    background-color: #93c4c0;
-    color: #fff;
-    font-size: 20px;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-  }
+  background-color: #93c4c0;
+  color: #fff;
+  font-size: 20px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
 
 /* animation */
 .header_navitem span {
@@ -127,7 +135,7 @@ Footer
 }
 
 .header_navitem span::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -137,12 +145,34 @@ Footer
   border-bottom: solid #93c4c0 1.4px;
   transform-origin: 50% 100%;
   transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
-  clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    0 100%,
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
 }
 
 .header_navitem span:hover::before {
   transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
-  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    50% 100%,
+    50% 0,
+    50% 0,
+    50% 100%,
+    50% 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
 }
 
 .header_navitem span {

@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="/assets/css/style_projects_content.css" />
   </head>
   <body>
+    <div class="cover"></div>
     <header class="header">
       <nav class="header_nav">
         <ul class="header_navlist">
           <li class="header_navitem">
-            <a href="/index.html"><span>Home</span></a>
+            <a onclick="handleHeaderClick('home')"><span>Home</span></a>
           </li>
           <li class="header_navitem">
-            <a href="/Projects.html"><span>Projects</span></a>
+            <a onclick="handleHeaderClick('projects')"><span>Projects</span></a>
           </li>
           <li class="header_navitem">
-            <a href="/About.html"><span>About</span></a>
+            <a onclick="handleHeaderClick('about')"><span>About</span></a>
           </li>
         </ul>
       </nav>
@@ -28,7 +29,7 @@
 
     <section class="content">
       <div class="all_projects_button">
-        <a href="/Projects.html">	&lt;All Projects </a>
+        <a onclick="handleBackButton()">	&lt;All Projects </a> 
       </div>
       <div class="main_info">
         <div class="video_link">
@@ -58,6 +59,6 @@
       <p>©2024 みつば</p>
     </footer>
 
-    <script src="/assets/js/app_about.js"></script>
+    <script src="/assets/js/app_projects_content.js"></script>
   </body>
 </html>

@@ -48,3 +48,11 @@ function handleHeaderClick(target) {
     }
   }, 1000);
 }
+
+function handleProjectClick(target) {
+  cover.style.opacity = 1;
+  cover.style.zIndex = 90;
+  setTimeout(() => {
+    window.location.href = `/Projects_Pages/${target}.html`;
+  }, 1000);
+}
