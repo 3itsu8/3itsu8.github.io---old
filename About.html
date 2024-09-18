@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="/assets/css/style_about.css" />
   </head>
   <body>
+    <div class="cover"></div>
     <header class="header">
       <nav class="header_nav">
         <ul class="header_navlist">
           <li class="header_navitem">
-            <a href="/index.html"><span>Home</span></a>
+            <a onclick="handleHeaderClick('home')"><span>Home</span></a>
           </li>
           <li class="header_navitem">
-            <a href="/Projects.html"><span>Projects</span></a>
+            <a onclick="handleHeaderClick('projects')"><span>Projects</span></a>
           </li>
           <li class="header_navitem">
-            <a href="/About.html"><span>About</span></a>
+            <a onclick="handleHeaderClick('about')"><span>About</span></a>
           </li>
         </ul>
       </nav>
@@ -51,7 +52,7 @@
             <figure class="X_icon">
                 <img src="/assets/images/X_icon.png" alt="Xのアイコン" class="X_img">
                 <figcaption class="X_ID">
-                  <p>/ <a href="https://x.com/3itsu8" class="X_Link">@3itsu8</a></p>
+                  <p>/ <a href="https://x.com/3itsu8" class="X_Link" target="_blank" rel="noopener noreferrer">@3itsu8</a></p>
                 </figcaption>
             </figure>
         </div>
@@ -59,7 +60,7 @@
             <figure class="YT_icon">
               <img src="/assets/images/YT_icon.png" alt="YouTubeのアイコン" class="YT_img">
                 <figcaption class="YT_ID">
-                  <p>/ <a href="https://www.youtube.com/@3itsu8" class="YT_Link">みつば</a></p>
+                  <p>/ <a href="https://www.youtube.com/@3itsu8" class="YT_Link" target="_blank" rel="noopener noreferrer">みつば</a></p>
                 </figcaption>
             </figure>
         </div>

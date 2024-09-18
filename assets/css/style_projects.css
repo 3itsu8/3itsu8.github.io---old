@@ -11,6 +11,15 @@ body {
     sans-serif;
 }
 
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 90;
+  transition: opacity 1s, z-index 1s;
+}
+
 .section_title {
   text-align: center;
 }
@@ -26,7 +35,7 @@ header
   align-items: center;
   padding: 0 15px;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top: 0;
   left: 0;
 }
@@ -56,22 +65,22 @@ header
 Projects
 */
 .contents_item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10px;
-    padding-left: 30px;
-    padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  padding-left: 30px;
+  padding-bottom: 40px;
 }
 
 .contents_year {
-    font-size: 35px;
-    color: #93c4c0;
-    padding-left: 30px;
+  font-size: 35px;
+  color: #93c4c0;
+  padding-left: 30px;
 }
 
 .content img {
-    width: 95%;
-    border-radius: 10px;
+  width: 95%;
+  border-radius: 10px;
 }
 
 .content a {
@@ -82,13 +91,13 @@ Projects
 Footer
 */
 .footer {
-    background-color: #93c4c0;
-    color: #fff;
-    font-size: 20px;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-  }
+  background-color: #93c4c0;
+  color: #fff;
+  font-size: 20px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
 
 /* animation */
 .header_navitem span {
@@ -97,7 +106,7 @@ Footer
 }
 
 .header_navitem span::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -107,12 +116,34 @@ Footer
   border-bottom: solid #93c4c0 1.4px;
   transform-origin: 50% 100%;
   transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
-  clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    0 100%,
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
 }
 
 .header_navitem span:hover::before {
   transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
-  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    50% 100%,
+    50% 0,
+    50% 0,
+    50% 100%,
+    50% 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
 }
 
 .header_navitem span {
@@ -125,27 +156,36 @@ Footer
 }
 
 .content {
-	overflow:		hidden;
-	position:		relative;	/* 相対位置指定 */
+  overflow: hidden;
+  position: relative; /* 相対位置指定 */
+  opacity: 0; /* マスクを表示しない */
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.content.fade-in {
+  opacity: 1; /* マスクを表示する */
+  transform: translateY(0);
+}
+
 .content .caption {
-	font-size:		200%;
-	text-align: 		center;
-	padding-top:		25%;
-	color:			#fff;
+  font-size: 200%;
+  text-align: center;
+  padding-top: 25%;
+  color: #fff;
 }
 .content .mask {
-	width:			95%;
-	height:			100%;
+  width: 95%;
+  height: 100%;
   border-radius: 10px;
-	position:		absolute;	/* 絶対位置指定 */
-	top:			0;
-	left:			0;
-	opacity:		0;	/* マスクを表示しない */
-	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
-	-webkit-transition:	all 0.2s ease;
-	transition:		all 0.2s ease;
+  position: absolute; /* 絶対位置指定 */
+  top: 0;
+  left: 0;
+  opacity: 0; /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.4); /* マスクは半透明 */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .content:hover .mask {
-	opacity:		1;	/* マスクを表示する */
+  opacity: 1; /* マスクを表示する */
 }
